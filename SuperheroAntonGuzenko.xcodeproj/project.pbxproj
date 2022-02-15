@@ -13,6 +13,14 @@
 		7113EC2327BBB26700D17346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7113EC2127BBB26700D17346 /* Main.storyboard */; };
 		7113EC2527BBB26900D17346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7113EC2427BBB26900D17346 /* Assets.xcassets */; };
 		7113EC2827BBB26900D17346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7113EC2627BBB26900D17346 /* LaunchScreen.storyboard */; };
+		718F884627BBB8760040937F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F884527BBB8760040937F /* Coordinator.swift */; };
+		718F884827BBB9C60040937F /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F884727BBB9C60040937F /* Storyboarded.swift */; };
+		718F884C27BBBABE0040937F /* Coordinator+Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F884B27BBBABE0040937F /* Coordinator+Calculator.swift */; };
+		718F884E27BBBAD20040937F /* Coordinator+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F884D27BBBAD20040937F /* Coordinator+Muscles.swift */; };
+		718F885027BBBAE00040937F /* Coordinator+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F884F27BBBAE00040937F /* Coordinator+Profile.swift */; };
+		718F885227BBBAF00040937F /* Coordinator+Programs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F885127BBBAF00040937F /* Coordinator+Programs.swift */; };
+		718F885427BBBB020040937F /* Coordinator+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F885327BBBB020040937F /* Coordinator+Progress.swift */; };
+		718F885627BBBB190040937F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718F885527BBBB190040937F /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		7113EC2427BBB26900D17346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7113EC2727BBB26900D17346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7113EC2927BBB26900D17346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		718F884527BBB8760040937F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		718F884727BBB9C60040937F /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		718F884B27BBBABE0040937F /* Coordinator+Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Calculator.swift"; sourceTree = "<group>"; };
+		718F884D27BBBAD20040937F /* Coordinator+Muscles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Muscles.swift"; sourceTree = "<group>"; };
+		718F884F27BBBAE00040937F /* Coordinator+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Profile.swift"; sourceTree = "<group>"; };
+		718F885127BBBAF00040937F /* Coordinator+Programs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Programs.swift"; sourceTree = "<group>"; };
+		718F885327BBBB020040937F /* Coordinator+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Progress.swift"; sourceTree = "<group>"; };
+		718F885527BBBB190040937F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,10 @@
 		7113EC1A27BBB26700D17346 /* SuperheroAntonGuzenko */ = {
 			isa = PBXGroup;
 			children = (
+				718F883A27BBB6940040937F /* Extensions */,
+				718F883B27BBB6BC0040937F /* Protocols */,
+				718F883C27BBB6E50040937F /* Models */,
+				718F883F27BBB73F0040937F /* Presentation */,
 				7113EC1B27BBB26700D17346 /* AppDelegate.swift */,
 				7113EC1D27BBB26700D17346 /* SceneDelegate.swift */,
 				7113EC1F27BBB26700D17346 /* ViewController.swift */,
@@ -65,6 +85,116 @@
 				7113EC2927BBB26900D17346 /* Info.plist */,
 			);
 			path = SuperheroAntonGuzenko;
+			sourceTree = "<group>";
+		};
+		718F883A27BBB6940040937F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		718F883B27BBB6BC0040937F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				718F884927BBB9F90040937F /* UITableViewCells */,
+				718F884027BBB7A40040937F /* Coordinator */,
+				718F884727BBB9C60040937F /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		718F883C27BBB6E50040937F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				718F883D27BBB7040040937F /* ProfileCoreData */,
+				718F883E27BBB7190040937F /* Profile */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		718F883D27BBB7040040937F /* ProfileCoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileCoreData;
+			sourceTree = "<group>";
+		};
+		718F883E27BBB7190040937F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		718F883F27BBB73F0040937F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				718F884A27BBBA250040937F /* Coordinator */,
+				718F884127BBB7B60040937F /* Views */,
+				718F884227BBB7CD0040937F /* ViewModels */,
+				718F884327BBB7E10040937F /* ViewControllers */,
+				718F884427BBB7F30040937F /* Storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		718F884027BBB7A40040937F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				718F884527BBB8760040937F /* Coordinator.swift */,
+			);
+			name = Coordinator;
+			path = ../Presentation/Coordinator;
+			sourceTree = "<group>";
+		};
+		718F884127BBB7B60040937F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		718F884227BBB7CD0040937F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		718F884327BBB7E10040937F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		718F884427BBB7F30040937F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		718F884927BBB9F90040937F /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		718F884A27BBBA250040937F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				718F884B27BBBABE0040937F /* Coordinator+Calculator.swift */,
+				718F884D27BBBAD20040937F /* Coordinator+Muscles.swift */,
+				718F884F27BBBAE00040937F /* Coordinator+Profile.swift */,
+				718F885127BBBAF00040937F /* Coordinator+Programs.swift */,
+				718F885327BBBB020040937F /* Coordinator+Progress.swift */,
+				718F885527BBBB190040937F /* MainCoordinator.swift */,
+			);
+			name = Coordinator;
+			path = ../Protocols/Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +268,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				718F884627BBB8760040937F /* Coordinator.swift in Sources */,
 				7113EC2027BBB26700D17346 /* ViewController.swift in Sources */,
+				718F885227BBBAF00040937F /* Coordinator+Programs.swift in Sources */,
+				718F884827BBB9C60040937F /* Storyboarded.swift in Sources */,
 				7113EC1C27BBB26700D17346 /* AppDelegate.swift in Sources */,
+				718F885627BBBB190040937F /* MainCoordinator.swift in Sources */,
+				718F885427BBBB020040937F /* Coordinator+Progress.swift in Sources */,
+				718F885027BBBAE00040937F /* Coordinator+Profile.swift in Sources */,
+				718F884E27BBBAD20040937F /* Coordinator+Muscles.swift in Sources */,
+				718F884C27BBBABE0040937F /* Coordinator+Calculator.swift in Sources */,
 				7113EC1E27BBB26700D17346 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
